@@ -133,6 +133,19 @@ $if(abstract)$
 </style>
 $endif$
 
+$if(acknowledgements)$
+<style type="text/css">
+  p.abstract{
+    text-align: center;
+    font-weight: bold;
+  }
+  div.abstract{
+    margin: auto;
+    width: 90%;
+  }
+</style>
+$endif$
+
 $if(source_embed)$
 <style type="text/css">
 #rmd-source-code {
@@ -546,6 +559,13 @@ $if(abstract)$
 $abstract$
 </div>
 $endif$
+$if(acknowledgements)$
+<div class="acknowledgements">
+<p class="acknowledgements">acknowledgements</p>
+$acknowledgements$
+</div>
+$endif$
+
 $endif$
 
 $if(theme)$
